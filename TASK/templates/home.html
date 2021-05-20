@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H4> Hello!</H4>
+<form action="/result", method="post">
+    {% csrf_token %}
+    Enter url:<input type="text" name="data"><input type="submit"VALUE="Submit">
+</form>
+</body>
+</html>

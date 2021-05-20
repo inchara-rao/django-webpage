@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>
+{{flag}}
+</h1>
+<table>
+    <tr>
+        <th>words</th>
+        <th>frequency</th>
+    </tr>
+
+    {% for key, value in a.items %}
+       <tr>
+            <td> {{ key }} </td>
+            <td> {{ value }} </td>
+       </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
